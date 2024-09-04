@@ -1,0 +1,77 @@
+{
+    "amount": "17.59",
+    "payment_method_nonce": "830bbc7c-7f3e-0b29-57b0-219d9bee08d6",
+    "LpmPaymentId": "5NS1409505990064U",
+    "lpmNLShippingAddress": {
+        "streetAddress": "LPM Addr Oosterdoksstraat 110",
+        "extendedAddress": "Apt. B",
+        "locality": "DK Amsterdam",
+        "postalCode": "1011",
+        "region": "NH",
+        "countryCode": "NL"
+    },
+    "lineItems": [
+        {
+            "quantity": "1",
+            "unitAmount": "15",
+            "name": "Monkey Toy",
+            "kind": "debit",
+            "unitTaxAmount": "5",
+            "description": "Big Size Monkey Toy",
+            "productCode": "SKU01",
+            "url": "https://examples.com/monkeytoy"
+        },
+        {
+            "quantity": "1",
+            "unitAmount": "20",
+            "name": "Lion Toy",
+            "kind": "debit",
+            "unitTaxAmount": "10",
+            "description": "Big Size Lion Toy",
+            "productCode": "SKU02",
+            "url": "https://examples.com/liontoy"
+        },
+        {
+            "quantity": "1",
+            "unitAmount": "10",
+            "name": "Coupon Discount",
+            "kind": "credit",
+            "description": "Coupon Discount Desc"
+        },
+        {
+            "quantity": "1",
+            "unitAmount": "5",
+            "name": "Shipping Fee",
+            "kind": "debit",
+            "description": "Shipping Fee Description",
+            "productCode": "",
+            "url": ""
+        },
+        {
+            "quantity": "1",
+            "unitAmount": "5",
+            "name": "Shipping Fee Discount",
+            "kind": "credit",
+            "description": "Shipping Fee Discount Desc",
+            "productCode": "",
+            "url": ""
+        },
+        {
+            "quantity": "1",
+            "unitAmount": "5",
+            "name": "Membership Discount",
+            "kind": "credit",
+            "description": "Membership Discount Desc",
+            "productCode": "",
+            "url": ""
+        }
+    ],
+    "nonceType": "PayPalAccount",
+    "lpmNLCustomerInfo": {
+        "email": "crosswen5@gmail.com",
+        "phone": "5101231234",
+        "givenName": "Crosslpm",
+        "surname": "Wenlpm"
+    },
+    "lpmMark": "true"
+}

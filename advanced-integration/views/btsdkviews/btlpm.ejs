@@ -1,0 +1,32 @@
+<html>
+
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- Load the client component. -->
+  <script src="https://js.braintreegateway.com/web/3.92.2/js/client.min.js"></script>
+
+  <!-- Load the local payment component. -->
+  <script src="https://js.braintreegateway.com/web/3.92.2/js/local-payment.min.js"></script>
+</head>
+
+<body>
+
+  <button id="ideal-button">
+    <img src="https://www.paypalobjects.com/images/checkout/alternative_payments/paypal_ideal_color.svg" class="payment-button" />
+  </button>
+  </br>
+  <button id="sofort-button">
+    <img src="https://www.paypalobjects.com/images/checkout/alternative_payments/paypal_sofort_black.svg" class="payment-button" />
+  </button>
+  <form style="display: none" id="payment-form" enctype='application/json' action="btlpmcheckout" method="post">
+    <input type="submit" />
+    <input type="hidden" id="amount" name="amount" value="17.59" />
+    <input type="hidden" id="nonce" name="payment_method_nonce" />
+  </form>
+  <script src="https://localhost/scripts/generic.js"></script>
+  <script src="https://localhost/btsdkscripts/btlpm.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,52 @@
+{
+    "data": {
+        "chargeCreditCard": {
+            "transaction": {
+                "id": "dHJhbnNhY3Rpb25fZHFxY2p0N20",
+                "legacyId": "dqqcjt7m",
+                "status": "SUBMITTED_FOR_SETTLEMENT",
+                "createdAt": "2023-05-25T08:27:10.000000Z",
+                "orderId": "f53c68d2-7a5b-4000-a129-ac8c7cfc6b57",
+                "amount": {
+                    "value": "10.59",
+                    "currencyCode": "USD"
+                },
+                "shipping": {
+                    "shippingAddress": {
+                        "firstName": "Crossbtsa",
+                        "lastName": "Wenbtsa",
+                        "addressLine1": "Shipping Addr Cross bt test 123 ABC Street",
+                        "addressLine2": "Shipping Addr Cross bt test Apt 2",
+                        "adminArea1": "CA",
+                        "adminArea2": "San Jose",
+                        "postalCode": "95121",
+                        "countryCode": "US",
+                        "phoneNumber": null
+                    }
+                },
+                "billingAddress": {
+                    "firstName": "Crossbtba",
+                    "lastName": "Wenbtba",
+                    "addressLine1": "Billing Addr Cross bt test 123 ABC Street",
+                    "addressLine2": "Billing Addr Cross bt test Apt 2",
+                    "adminArea1": "CA",
+                    "adminArea2": "San Jose",
+                    "postalCode": "95121",
+                    "countryCode": "US",
+                    "phoneNumber": null
+                },
+                "customer": null,
+                "paymentMethodSnapshot": {
+                    "__typename": "CreditCardDetails",
+                    "last4": "1111",
+                    "brandCode": "VISA"
+                }
+            }
+        }
+    },
+    "extensions": {
+        "requestId": "4cffd534-aa09-46b0-9b75-1e43d7c7850f"
+    },
+    "headers": {},
+    "status": 200
+}

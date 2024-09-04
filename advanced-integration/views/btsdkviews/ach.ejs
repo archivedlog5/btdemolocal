@@ -1,0 +1,67 @@
+<html>
+
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" type="text/css" href="https://localhost/css/ach.css" />
+  <script src="https://js.braintreegateway.com/web/3.94.0/js/client.min.js"></script>
+  <script src="https://js.braintreegateway.com/web/3.94.0/js/us-bank-account.min.js"></script>
+  <!-- 
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  -->
+  <script src="https://localhost/scripts/jquery.min.js"></script>
+
+</head>
+
+<body>
+
+  <form id="my-sample-form" enctype='application/json' action="achcheckout" method="post">
+    <label for="routing-number">Routing Number:</label>
+    <input type="text" id="routing-number" name="routingNumber" value="011000015" required><br><br>
+
+    <label for="account-number">Account Number:</label>
+    <input type="text" id="account-number" name="accountNumber" value="1000000000" required><br><br>
+
+    
+    <label for="account-type">Account Type:</label>
+    <select id="account-type" name="accountType" required>
+      <option value="checking">Checking</option>
+      <option value="savings">Savings</option>
+    </select><br><br>
+
+    <label for="ownership-type">Ownership Type:</label>
+    <select id="ownership-type" name="ownershipType" required>
+      <option value="personal">Personal</option>
+      <option value="business">Business</option>
+    </select><br><br>
+
+    <button id="button-pay" value="submit">Checkout</button>
+
+    <input type="hidden" id="first-name" name="firstName" value="Cross" >
+    <input type="hidden" id="last-name" name="lastName" value="Wen">
+
+    <input type="hidden" id="business-name" name="businessName" value="CWEN US STORE">
+
+    <input type="hidden" id="billing-street-address" name="billingStreetAddress" required value="113 street">
+    <input type="hidden" id="billing-extended-address" name="billingExtendedAddress" value="Apt 12">
+    <input type="hidden" id="billing-locality" name="billingLocality" required value="New York">
+    <input type="hidden" id="billing-region" name="billingRegion" required value="NY">
+    <input type="hidden" id="billing-postal-code" name="billingPostalCode" required value="10013">
+
+    <input type="hidden" id="email" name="email" value="crosswen5@gmail.com" />
+    <input type="hidden" id="amount" name="amount" value="35.00" />
+    <input type="hidden" id="nonce" name="payment_method_nonce" />
+    <input type="hidden" id="vaultpaymentmethod" name="vaultpaymentmethod" value="true" />
+    <input type="hidden" id="vaultnewcustomer" name="vaultnewcustomer" value="false" />
+    <input type="hidden" id="vaultexistingcustomer" name="vaultexistingcustomer" value="true" />
+    <input type="hidden" id="existingcustomerid" name="existingcustomerid" value="DlLhgTXYAweF0r6B1PmdVBao4QHHLW" />
+
+
+  </form>
+
+  <script src="https://localhost/scripts/generic.js"></script>
+  <script src="https://localhost/btsdkscripts/ach.js"></script>
+</body>
+
+</html>

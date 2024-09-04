@@ -1,0 +1,37 @@
+{
+    amount: '35.00',
+    orderId: '40441087-c9fc-48dd-b384-16459faa3803',
+    merchantAccountId: 'cwBTtest',
+    paymentMethodNonce: '5e21d88f-7e2a-007c-6e8e-3f498bc82430',
+    customer: {
+      firstName: 'Crossup',
+      lastName: 'Wenup',
+      company: '',
+      phone: '4084951403',
+      email: 'cwenup@personal.com'
+    },
+    billing: {
+      firstName: 'Crossbtba',
+      lastName: 'Wenbtba',
+      company: '',
+      streetAddress: 'Billing Addr Cross bt test 123 ABC Street',
+      extendedAddress: 'Billing Addr Cross bt test Apt 2',
+      locality: 'San Jose',
+      region: 'CA',
+      postalCode: '95121',
+      countryCodeAlpha2: 'US'
+    },
+    shipping: {
+      firstName: 'Crossbtpsa',
+      lastName: 'Wenbtpsa',
+      company: '',
+      streetAddress: 'PayPal Shipping Addr Cross bt test 123 ABC Street',
+      extendedAddress: 'PayPal Shipping Addr Cross bt test Apt 2',
+      locality: 'San Jose',
+      region: 'CA',
+      postalCode: '95121',
+      countryCodeAlpha2: 'US'
+    },
+    options: { submitForSettlement: true }
+  }
+  

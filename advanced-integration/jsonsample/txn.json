@@ -1,0 +1,50 @@
+transaction {
+    id
+    lagacyId
+    status
+    createdAt
+    orderId
+    
+    amount {
+        value
+        currencyCode
+    }
+
+    
+    shipping {
+        shippingAddress {
+        firstName
+        lastName
+        addressLine1
+        addressLine2
+        adminArea1
+        adminArea2
+        postalCode
+        countryCode
+        phoneNumber
+        }
+    }
+
+    
+billingAddress {
+firstName
+lastName
+addressLine1
+addressLine2
+adminArea1
+adminArea2
+postalCode
+countryCode
+phoneNumber
+    }
+
+    
+paymentMethodSnapshot {
+__typename
+
+... on CreditCardDetails {
+last4
+brandCode
+        }
+    }
+}

@@ -1,0 +1,29 @@
+<html>
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="https://js.braintreegateway.com/web/dropin/1.36.1/js/dropin.min.js"></script>
+  </head>
+  <body>
+    <form id="payment-form" enctype='application/json' action="dropinvaultpaymentcheckout" method="post">
+      <!-- Putting the empty container you plan to pass to
+        `braintree.dropin.create` inside a form will make layout and flow
+        easier to manage -->
+      <div id="dropin-container"></div>
+      <input type="checkbox" id="vault" name="vault" checked disabled="true">
+      <label for="vault">Vault Your Payment Method When Payment Successful</label>
+      </br>
+      <input type="submit" />
+      <input type="hidden" id="email" name="email" value="crosswen5@gmail.com"/>
+      <input type="hidden" id="amount" name="amount" value="35.00"/>
+      <input type="hidden" id="nonce" name="payment_method_nonce"/>
+      <input type="hidden" id="vaultpaymentmethod" name="vaultpaymentmethod" value="true"/>
+      <input type="hidden" id="vaultnewcustomer" name="vaultnewcustomer" value="false"/>
+      <input type="hidden" id="vaultexistingcustomer" name="vaultexistingcustomer" value="true"/>
+      <input type="hidden" id="existingcustomerid" name="existingcustomerid" value="DlLhgTXYAweF0r6B1PmdVBao4QHHLW"/>
+    </form>
+    <script src="https://localhost/scripts/generic.js"></script>
+    <script src="https://localhost/btsdkscripts/dropinvaultpayment.js"></script>
+  </body>
+</html>

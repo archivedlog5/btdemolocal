@@ -1,0 +1,69 @@
+{
+    "data": {
+        "chargePayPalAccount": {
+            "transaction": {
+                "id": "dHJhbnNhY3Rpb25fZnNiNHpwYnE",
+                "legacyId": "fsb4zpbq",
+                "status": "SETTLING",
+                "createdAt": "2023-05-25T10:08:00.000000Z",
+                "orderId": "2bd16545-a07c-4282-8971-3f90a377a2c3",
+                "amount": {
+                    "value": "35.00",
+                    "currencyCode": "USD"
+                },
+                "shipping": {
+                    "shippingAddress": {
+                        "firstName": "Crossbtpsa",
+                        "lastName": "Wenbtpsa",
+                        "addressLine1": "PayPal Shipping Addr Cross bt test 123 ABC Street",
+                        "addressLine2": "PayPal Shipping Addr Cross bt test Apt 2",
+                        "adminArea1": "CA",
+                        "adminArea2": "San Jose",
+                        "postalCode": "95121",
+                        "countryCode": "US",
+                        "phoneNumber": null
+                    }
+                },
+                "billingAddress": {
+                    "firstName": null,
+                    "lastName": null,
+                    "addressLine1": null,
+                    "addressLine2": null,
+                    "adminArea1": null,
+                    "adminArea2": null,
+                    "postalCode": null,
+                    "countryCode": null,
+                    "phoneNumber": null
+                },
+                "customer": null,
+                "paymentMethodSnapshot": {
+                    "__typename": "PayPalTransactionDetails",
+                    "authorizationId": "5J012474DD7725813",
+                    "captureId": "5J012474DD7725813",
+                    "payer": {
+                        "email": "cwenup@personal.com",
+                        "phone": "4084951403",
+                        "payerId": "SW4C6U9BMKDLG"
+                    },
+                    "payee": {
+                        "email": null,
+                        "phone": null,
+                        "payerId": null
+                    },
+                    "payerStatus": "VERIFIED",
+                    "paymentId": "PAYID-MRXTG5I7KR37188E1781193Y",
+                    "sellerProtectionStatus": "ELIGIBLE",
+                    "transactionFee": {
+                        "value": "1.67",
+                        "currencyCode": "USD"
+                    }
+                }
+            }
+        }
+    },
+    "extensions": {
+        "requestId": "59e3be33-e2af-4aeb-9b94-938268015f93"
+    },
+    "headers": {},
+    "status": 200
+}

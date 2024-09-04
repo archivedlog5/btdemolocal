@@ -1,0 +1,57 @@
+The variables input contains a field name 'phoneNumber' that is not defined for input object type 'AddressInput' : {
+    "response": {
+        "errors": [
+            {
+                "message": "The variables input contains a field name 'phoneNumber' that is not defined for input object type 'AddressInput' "
+            }
+        ],
+        "extensions": {
+            "requestId": "fde72a3f-3fcd-45b7-9086-bd179be3fc34"
+        },
+        "status": 200,
+        "headers": {}
+    },
+    "request": {
+        "query": "mutation ChargeCreditCard($input: ChargeCreditCardInput!) {\n chargeCreditCard(input: $input) {\n \ntransaction {\n id\n legacyId\n status\n createdAt\n orderId\n \namount {\n value\n currencyCode\n}\n\n \nshipping {\n shippingAddress {\n firstName\n lastName\n addressLine1\n addressLine2\n adminArea1\n adminArea2\n postalCode\n countryCode\n phoneNumber\n }\n}\n\n \nbillingAddress {\n firstName\n lastName\n addressLine1\n addressLine2\n adminArea1\n adminArea2\n postalCode\n countryCode\n phoneNumber\n}\n\n \npaymentMethodSnapshot {\n __typename\n \n... on CreditCardDetails {\n last4\n brandCode\n}\n\n}\n\n}\n\n }\n}\n",
+        "variables": {
+            "input": {
+                "paymentMethodId": "tokencc_bf_xs2kbz_c4fsvf_htnnqd_y7p6nb_6j7",
+                "options": {
+                    "billingAddress": {
+                        "firstName": "Crossbtba",
+                        "lastName": "Wenbtba",
+                        "addressLine1": "Billing Addr Cross bt test 123 ABC Street",
+                        "addressLine2": "Billing Addr Cross bt test Apt 2",
+                        "adminArea1": "CA",
+                        "adminArea2": "San Jose",
+                        "postalCode": "95121",
+                        "countryCode": "US",
+                        "phoneNumber": "2407808080"
+                    }
+                },
+                "transaction": {
+                    "amount": "10.59",
+                    "merchantAccountId": "cwBTtest",
+                    "orderId": "c562c710-e3d9-4b25-a842-7f941423b235",
+                    "shipping": {
+                        "shippingAddress": {
+                            "firstName": "Crossbtsa",
+                            "lastName": "Wenbtsa",
+                            "addressLine1": "Shipping Addr Cross bt test 123 ABC Street",
+                            "addressLine2": "Shipping Addr Cross bt test Apt 2",
+                            "adminArea1": "CA",
+                            "adminArea2": "San Jose",
+                            "postalCode": "95121",
+                            "countryCode": "US",
+                            "phoneNumber": "2407808080"
+                        }
+                    },
+                    "customerDetails": {
+                        "email": "crosswen5@gmail.com",
+                        "phoneNumber": "2407808080"
+                    }
+                }
+            }
+        }
+    }
+}
